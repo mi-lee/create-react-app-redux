@@ -1,9 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
+import { Route, Router } from 'react-router';
+import { Provider } from 'react-redux';
+
+import store, { history } from './store/'
+import App from './containers/App';
+
+import './styles/index.css';
+
+const Root = (
+  <Provider store={store}>
+    <Router history={history}>
+      <Route path="/" component={App} />
+    </Router>
+  </Provider>
+);
 
 ReactDOM.render(
-  <App />,
-  document.getElementById('root')
+  Root,
+  document.getElementById('root'),
 );
