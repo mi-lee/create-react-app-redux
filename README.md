@@ -1,3 +1,17 @@
+# Create React App, Redux + Redux Thunk
+
+Identical to create react app except it includes
+
+- React Router, 4.1.1
+- Redux, 3.6
+- Redux Thunk, 2.2
+- ESLint, 3.19
+- ESLint Config Airbnb, 14.1
+
+Also includes minimal boilerplate for a component using Redux.
+
+============================
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
